@@ -23,7 +23,7 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git', ref: "2e83e3bf13dd4d963ed70bf4766f233f993b3e44"
+gem 'rails-observers', git: "https://github.com/Partyista/rails-observers.git", ref: "722267df472f6a112184309f28422268fe1e7d0b"
 gem 'rails_12factor', group: :production
 
 ruby "2.3.1"
