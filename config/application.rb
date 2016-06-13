@@ -11,6 +11,7 @@ module Activemodelobservernottriggering
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    #config.active_record.observers = :vacation_spot_observer
+
+    #config.active_record.observers = :vacation_spot_observer => this doesn't work, see /config/initializers/rails-observers.rb
   end
 end
