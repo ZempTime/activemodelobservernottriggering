@@ -9,10 +9,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
 gem 'jbuilder', '~> 2.0'
+gem "pg"
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'sqlite3'
 end
 
 group :development do
@@ -25,9 +25,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git', ref: "2e83e3bf13dd4d963ed70bf4766f233f993b3e44"
 gem 'rails_12factor', group: :production
-
-group "production" do
-  gem "pg"
-end
 
 ruby "2.3.1"
