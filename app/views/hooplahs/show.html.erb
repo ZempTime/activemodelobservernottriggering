@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vacation spot:</strong>
+  <%= @hooplah.vacation_spot_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hooplah.description %>
+</p>
+
+<%= link_to 'Edit', edit_hooplah_path(@hooplah) %> |
+<%= link_to 'Back', hooplahs_path %>

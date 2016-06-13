@@ -1,0 +1,2 @@
+class Hooplah < ApplicationRecord
+end

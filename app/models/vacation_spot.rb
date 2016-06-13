@@ -1,0 +1,2 @@
+class VacationSpot < ApplicationRecord
+end

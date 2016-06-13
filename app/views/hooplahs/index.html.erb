@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hooplahs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vacation spot</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hooplahs.each do |hooplah| %>
+      <tr>
+        <td><%= hooplah.vacation_spot_id %></td>
+        <td><%= hooplah.description %></td>
+        <td><%= link_to 'Show', hooplah %></td>
+        <td><%= link_to 'Edit', edit_hooplah_path(hooplah) %></td>
+        <td><%= link_to 'Destroy', hooplah, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hooplah', new_hooplah_path %>
